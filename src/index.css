@@ -1,0 +1,231 @@
+/* body {
+  font-family: sans-serif;
+  font-family: 'lato';
+}
+
+.calculator-card {
+  min-height: 100px;
+  padding: 0 0 10px;
+  margin-top: 1em;
+  box-shadow: 1px 2px 8px 0 rgba(0,0,0,0.12);
+  background: #FFF;
+  border-radius: 10px;
+}
+
+.MuiFormControl-root-1, .jss1 {
+  width: 100%;
+}
+
+.MuiFormLabel-root-10, .jss10 {
+    font-size: 15px!important;
+    font-family: 'Lato'!important;
+    font-weight: 400;
+    color: #CAD2DE!important;
+}
+
+.MuiInputLabel-formControl-6, .jss6 {
+    top: -4px!important;
+  }
+
+.MuiInput-input-25, .jss25 {
+  font-size: 16px!important;
+  color: #708093!important;
+  font-weight: 300!important;
+}
+
+.MuiSelect-selectMenu-32, .jss32 {
+  text-align: left;
+  line-height: 20px!important;
+  margin-top: -1px!important;
+}
+
+.MuiFormLabel-root-10.MuiFormLabel-focused-11, .jss10.jss11 {
+  color: #3FAFD7!important;
+}
+
+.MuiInput-underline-21:after, .jss21::after {
+    border-bottom: 2px solid #3FAFD7!important;
+  }
+
+.MuiInput-underline-21:hover:not(.MuiInput-disabled-20):not(.MuiInput-focused-19):not(.MuiInput-error-22):before,
+.jss21:hover:not(.jss20):not(.jss19):not(.jss22):before {
+    border-bottom: 2px solid #8A9BAE!important;
+}
+
+.MuiInput-underline-21:before,
+.jss21:before {
+	border-bottom: 2px solid #CAD2DE!important;
+}
+
+#sign_up_form .MuiFormLabel-root-10,
+#sign_up_form .MuiFormLabel-root-10.MuiFormLabel-focused-11,
+#sign_up_form .MuiInput-input-25,
+#sign_up_form .jss10,
+#sign_up_form .jss10.jss11,
+#sign_up_form .jss25
+ {
+  color: #FFF!important;
+}
+
+#sign_up_form .MuiInput-underline-21:after,
+#sign_up_form .MuiInput-underline-21:hover:not(.MuiInput-disabled-20):not(.MuiInput-focused-19):not(.MuiInput-error-22):before,
+#sign_up_form .MuiInput-underline-21:before,
+#sign_up_form .jss21:after,
+#sign_up_form .jss21:hover:not(.jss20):not(.jss19):not(.jss22):before,
+#sign_up_form .jss21:before {
+  border-bottom: 2px solid #FFF!important;
+}
+
+.calculate-btn {
+  border: none;
+background: #99CA2F;
+color: #FFF;
+padding: 12px 24px;
+border-radius: 24px;
+}
+
+.calculator-results {
+  min-height: 410px;
+  box-shadow: 1px 2px 8px 0 rgba(0,0,0,0.12);
+  background: #FFF;
+  border-radius: 10px;
+  padding: 2em 1em;
+  text-align: center;
+  color: #8A9BAE;
+  position: relative;
+}
+
+.calculator-results h1{
+  color: #3FAFD7;
+  font-size: 20px;
+  font-weight: bold;
+}
+.calculator-results b {
+  color: #536171;
+}
+
+.total-super {
+  font-size: 16px;
+  margin-top:2em;
+}
+
+.total-super .total-result {
+  color: #3FAFD7;
+}
+
+.close-btn {
+  text-align: right;
+  padding: 10px 10px 0;
+  min-height: 33px;
+}
+
+.close-btn button {
+  border: none;
+  background: transparent;
+  font-family: "Font Awesome 5 Free";
+  color: #CAD2DE;
+}
+
+.add-employee {
+  text-align: center;
+  font-size: 18px;
+  margin: 1em;
+}
+
+.add-employee a {
+  color: #3FAFD7;
+  text-decoration: none;
+}
+
+.calculate-button {
+  margin-top: 40px;
+}
+
+.pattern-left {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+}
+
+.pattern-right {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+}
+
+.blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.sign-up-form {
+  position: absolute;
+  top: 0;
+  left:0;
+  width:100%;
+  height:100%;
+	border-radius: 10px;
+  background-color: rgba(63, 175, 215, 0.85);
+  color: #FFF;
+  padding: 1em;
+  font-size: 16px;
+}
+
+.sign-up-form button {
+color: #FFF;
+border: none;
+border-radius: 24px;
+padding: 12px 24px;
+width: 90%;
+font-size: 16px;
+margin-top: 2em;
+background-color: rgba(255,255,255,0.4);
+}
+
+.sign-up-form button:hover {
+background-color: rgba(255,255,255,0.6);
+}
+
+.sign-up-inputs .row {
+  margin: 20px 0;
+}
+
+.reveal-btn {
+  margin-top: -20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.result .col-md-4 {
+  overflow-wrap: break-word;
+}
+
+.unqualified {
+  color: #CAD2DE;
+}
+
+.error {
+  border-color: #D63C3A!important;
+}
+
+.error-msg {
+  color: #D63C3A;
+  font-size: 12px;
+}
+
+@media only screen and (max-width : 992px) {
+  .calculator-card {
+      padding: 1em 0 3em;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .calculator-card .col-xs-12 {
+    margin: 1em 0;
+  }
+ } */

@@ -1,0 +1,268 @@
+.super-container {
+    border: 1px solid #E9ECF6;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+
+.super-head {
+  background-color: #3fafd7;
+  color: #FFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  padding: 1em 2em;
+	border-radius: 8px 8px 0 0;
+}
+
+.super-calc {
+  padding: 1em;
+  text-align: left;
+}
+
+.super-calcs {
+  padding: 1em 2em;
+}
+
+.super-container input {
+  border-radius: 4px;
+	border: 1px solid #CAD2DE;
+	background-color: rgba(216,216,216,0);
+  padding: 10px;
+  color: #536171;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 19px;
+  width:100%;
+	height: 45px;
+  font-weight: normal;
+}
+
+.super-container input::placeholder {
+	color: #8A9BAE;
+}
+
+.super-select {
+  width: 100%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+	height: 45px;
+  padding: 10px;
+  color: #8A9BAE;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 19px;
+  border: 1px solid #CAD2DE;
+  border-radius: 4px;
+  background-color: white;
+  background-image: URL(https://d3l1s0c8npowa8.cloudfront.net/wp-content/uploads/20190410124121/dropdown-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 94%;
+}
+
+.super-result {
+  color: #8A9BAE;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  height: 45px;
+}
+
+.super-number {
+  position: relative;
+}
+
+.super-number input {
+  padding-left:23px;
+}
+
+.super-number::after {
+  content: '$';
+  color: #8A9BAE;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 19px;
+  position: absolute;
+  left: 25px;
+  top:12px;
+}
+
+.super-close {
+  display: flex;
+  align-items: center;
+  height: 45px;
+}
+
+.hide-md .super-close {
+  height: auto;
+  text-align: right;
+  position: relative;
+}
+
+.hide-md .super-close button {
+  position: absolute;
+  right: -14px;
+  top: -8px;
+}
+
+.super-select {
+  position: relative;
+}
+
+.super-select::after {
+  content: '$';
+  color: #8A9BAE;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 19px;
+  position: absolute;
+  left: 25px;
+  top:12px;
+}
+
+.super-close button {
+  border: none;
+  background: transparent;
+	color: #8A9BAE;
+}
+
+.super-actions {
+  padding: 2em 2em;
+  border-top: 1px solid #E9ECF6;
+}
+
+.calculate-btns {
+  text-align: left;
+}
+
+.calculate-btns a {
+  	color: #3FAFD7!important;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    position: relative;
+    cursor: pointer;
+}
+
+.calculate-btns a:first-child {
+  margin-right:2em;
+}
+
+.calculate-btns a:hover {
+  text-decoration: none;
+}
+
+.add-staff::after {
+  content: '';
+  height: 18px;
+  width: 1px;
+  background-color: #CAD2DE;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+  position: absolute;
+  top: 0;
+  right: -1.1em;
+}
+
+.total-super-label {
+  color: #536171;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: right;
+}
+
+.total-super-result {
+  color: #8A9BAE;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+}
+
+.input-label {
+  color: #26496E;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+@media only screen and (min-width: 992px) {
+  .hide-md {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .hide-xs {
+    display: none;
+  }
+
+  .hide-sm {
+    display: none;
+  }
+
+  .super-container {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+  }
+
+  .super-calcs {
+    background: transparent;
+  }
+
+  .super-calc {
+    background-color: #FFF;
+    margin-bottom: 1rem;
+    border-top: 20px solid #3fafd7;
+  	border-radius: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  }
+
+  .super-actions {
+    background-color: #FFF;
+  	border-radius: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  }
+
+  .super-calc .row div {
+    margin-bottom: 1rem;
+  }
+
+  .super-number::after {
+    top:32px;
+  }
+
+  .show-md {
+    display:block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .calculate-btns {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .show-md {
+    display:none;
+  }
+
+  .show-xs {
+    display: block;
+  }
+}
